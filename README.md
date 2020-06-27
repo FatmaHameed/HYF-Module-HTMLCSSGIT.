@@ -1,1 +1,1 @@
-wrote CLI commands and build digital resume
+Wrote CLI commands and build digital resume
