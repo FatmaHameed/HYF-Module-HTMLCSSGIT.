@@ -1,0 +1,13 @@
+1- To create a hidden folder (firstanswer) in CLI we use this command:
+mdir .firstanswer
+To display it in CLI, we use this command:
+ls -a
+
+2- To create multiple nested directories (c/Users/myusername/these/folders/are/just/for/fun) we use this command:
+mkdir -p c/Users/myusername/these/folders/are/just/for/fun
+
+3- To append a message to a file, without a newline character, we use:
+echo -e "first message \nsecond message">>commandline.txt
+The following text I did it by the command above:
+first message 
+second message

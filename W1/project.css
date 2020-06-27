@@ -1,0 +1,247 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+}
+#mainContent {
+  width: 90%;
+  background-color: rgb(232, 237, 247);
+  box-shadow: 5px 5px 5px grey;
+}
+/*-- styling header---*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(./images/backgroundheader.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 210px;
+  box-shadow: 0px 10px 5px grey;
+  border-radius: 5px;
+  width: 100%;
+}
+.PCphoto {
+  flex: 1;
+  max-width: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.PCphoto img {
+  border-radius: 50%;
+  --webkit-- border-radius: 50%;
+  --moz-- border-radius: 50%;
+  min-width: 70%;
+  margin: 20px 5px 20px 30px;
+  box-shadow: 0px 5px 5px grey;
+}
+.PCInfo {
+  flex: 2;
+  margin-top: 2%;
+  font-family: sanserif;
+  line-height: 1.5;
+  text-align: left;
+  color: whitesmoke;
+  text-shadow: 0px 2px 4px #000000;
+  max-width: 70%;
+  font-size: inherit;
+  margin-bottom: 4%;
+}
+ul li {
+  list-style: none;
+  text-align: justify;
+}
+.PCInfo a {
+  color: whitesmoke;
+}
+/*-- making header responsive---*/
+
+@media (max-width: 705px) {
+  .PCphoto img {
+    min-width: 80%;
+    margin-left: 10px;
+  }
+  .PCphoto {
+    flex: 1;
+    max-width: 70%;
+    margin-left: 0px;
+  }
+  .PCInfo {
+    flex: 2;
+    margin-top: 2%;
+    max-width: 70%;
+    font-size: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*-- styling body---*/
+.container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.brief {
+  margin: 10px 30px 25px;
+  padding-top: 20px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.headings {
+  background-image: url(./images/backgroundheader.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 200px;
+  margin: 30px 15px;
+  font-size: 35px;
+  text-align: center;
+  border-radius: 50%;
+  --webkit-- border-radius: 50%;
+  --moz-- border-radius: 50%;
+  width: 35%;
+  box-shadow: 0px 5px 5px grey;
+}
+.headings a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.headings p {
+  text-align: center;
+  padding: 50px 2px;
+  text-shadow: 0px 2px 4px #000000;
+}
+.headings a:hover {
+  color: rgb(124, 178, 214);
+  transition: 0.5s;
+}
+.headings:hover {
+  width: 35.5%;
+  transition: 0.5s;
+}
+.oneWord p {
+  margin-top: 10%;
+}
+
+/*--Making Headings responsive --*/
+@media (max-width: 1000px) {
+  .headings {
+    font-size: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .container-2 {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 750px) {
+  .container-2 {
+    width: 120%;
+    margin-left: -50px;
+    float: left;
+  }
+}
+@media (max-width: 600px) {
+  .container-2 {
+    width: 120%;
+    margin-left: -50px;
+    float: left;
+  }
+  .headings {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .container-2 {
+    flex-direction: column;
+    width: 150%;
+    margin-left: -70px;
+  }
+}
+/*-- Styling text information --*/
+#education {
+  margin: 30px 0;
+  float: left;
+  text-align: justify;
+  line-height: 30px;
+}
+#education h2 {
+  font-weight: 1300;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+#education ul {
+  text-align: justify;
+}
+#education ul li {
+  list-style: square;
+}
+
+#workExperience h2 {
+  font-weight: 1300;
+  font-size: 35px;
+  margin-bottom: 15px;
+  float: left;
+  padding: 20px 0 15px 0;
+}
+.date {
+  max-width: 20%;
+}
+.date time {
+  padding: 10% 0%;
+  line-height: 30px;
+}
+.job {
+  max-width: 80%;
+}
+.job ul {
+  margin-top: 1.5%;
+  margin-bottom: 2%;
+}
+.job ul li {
+  line-height: 30px;
+  list-style: square;
+}
+.job small {
+  margin-left: 30px;
+  line-height: 30px;
+}
+.container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 0 2px 0;
+  width: 110%;
+}
+/*-- styling footer---*/
+#footer {
+  min-height: 20px;
+  background-image: url(./images/backgroundheader.jpg);
+  background-position: center;
+  background-size: cover;
+  color: whitesmoke;
+  box-shadow: 5px -2px 5px grey;
+  border-radius: 5px;
+  clear: both;
+}
+#footer p {
+  padding: 2% 5px;
+}
+#footer p span {
+  padding: 0 2%;
+  text-shadow: 0px 2px 4px #000000;
+}
+#footer p span:first-child {
+  font-size: 30px;
+  font-weight: bold;
+}
+#footer a {
+  color: whitesmoke;
+}
