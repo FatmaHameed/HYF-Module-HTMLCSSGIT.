@@ -1,0 +1,166 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  width: 98%;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Fatma-h1';
+  src: local('Poller One'), local('PollerOne-Regular'),
+    url(https://fonts.gstatic.com/s/pollerone/v9/ahccv82n0TN3gia5E4BuR-5RgA.woff2)
+      format('woff2');
+}
+@font-face {
+  font-family: 'Fatma-h2';
+  src: local('Kaushan Script'), local('KaushanScript-Regular'), url(https://fonts.gstatic.com/s/kaushanscript/v8/vm8vdRfvXFLG3OLnsO15WYS5DG74wNI.woff2) format('woff2');
+
+      format('woff2');
+}
+@font-face {
+  font-family: 'Fatma-p';
+  src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUk1VvoK.woff2) format('woff2');
+}
+main {
+  background-color: rgb(218, 236, 253);
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 4px rgb(1, 1, 70);
+
+}
+
+img {
+  max-width: 98%;
+  margin: 1%;
+}
+header {
+  height: 120px;
+  width: 98%;
+  background-image: url(./images/background.jpg);
+  margin: 0% 1% 0 1%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgb(1, 1, 70);
+}
+h1 {
+  margin: .5% 2% 0% 2%;
+  text-align: center;
+  font-family: Fatma-h1;
+  width: 100%;
+  padding: 3% 2%;
+  color: white;
+  font-size: 45px;
+  text-shadow: 0px 5px 7px rgb(3, 4, 80);
+  
+  
+}
+h2 {
+  font-family: Fatma-h2;
+  font-weight: 900;
+  font-size: 2em;
+  width: 100%;
+  margin: .3% auto;
+  text-align: center;
+  padding: 4%;
+  text-shadow: 0px 5px 7px white; 
+}
+#grid-floats {
+  width: 100%;
+  margin: 1% 3% 10% 2%;
+ 
+}
+#grid-floats .grid-item {
+  max-width: 28%;
+  float: left;
+  margin: 1.5% 2%;
+  list-style: none;
+  border: 2px solid transparent;
+  padding: 1%;
+  height: 450px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px rgb(1, 1, 70);
+}
+h3 {
+  margin: 1%;
+  text-align: center;
+  padding: 1%;
+  font-family: Fatma-h2;
+  font-weight: 700;
+  text-shadow: 0px 5px 9px rgb(1, 1, 70);
+}
+p {
+  width: 80%;
+  padding: 1%;
+  text-align: justify;
+  font-family: Fatma-p, cursive;
+}
+
+#grid-floats .grid-item:nth-child(13) {
+  width: 33%;
+  margin-left: 210px;
+  margin-right: 2% ;
+}
+#grid-floats .grid-item:nth-child(14) {
+  width: 33%;
+  margin-left: 2%;
+  margin-right: 200px;
+  margin-bottom: 3%;
+  
+}
+#grid-floats .grid-item:nth-child(3) p {
+ font-size: 14.6px;
+}
+#grid-floats .grid-item:nth-child(10) p {
+  font-size: 14.6px;
+ }
+ #grid-floats .grid-item:nth-child(9) p {
+  font-size: 15px;
+ }
+ /* Grid with flex-box */
+ section:nth-child(2) h2{
+   color: rgb(6, 6, 138);
+   clear: both;
+  
+ }
+ #grid-flex {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   position: relative;
+   padding-bottom: 30px;
+   margin-bottom: .5%;
+   
+ }
+ #grid-flex .grid-item {
+   width: 250px;
+   margin: 2% 2%;
+   padding: 1%;
+   list-style: none;
+   border: 2px solid transparent;
+   background-color: white;
+   border-radius: 30px;
+   box-shadow: 0px 2px 4px rgb(1, 1, 70);
+   flex-grow: 1;
+   
+ }
+ 
+ #grid-flex .grid-item:nth-child(13) {
+   flex-grow: unset;
+   width: 330px;
+ }
+ #grid-flex .grid-item:nth-child(14) {
+  flex-grow: unset;
+  width: 330px;
+}
+
+/*--Making flex responsive--*/
+
+
+@media (max-width: 780px) {
+  #grid-flex .grid-item:nth-child(13) {
+    flex-grow: 1;
+    width: 250px;
+  }
+  #grid-flex .grid-item:nth-child(14) {
+   flex-grow: 1;
+   width: 250px;
+ } 
+}
