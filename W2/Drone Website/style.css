@@ -186,7 +186,7 @@ p {
 
 }
 /* Making website responsive for Desktop > 1024*/
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   #grid-floats .grid-item {
   width: 265px;
   float: left;
@@ -199,5 +199,21 @@ p {
    padding: 1%;
   
  }
+ #grid-floats .grid-item:nth-child(1) {
+  width: 45%;
+  margin: 2% 2%;
+  height: 580px; 
+ 
+}
+#grid-floats .grid-item:nth-child(2) {
+  width: 265px;
+  margin: 2% 1%;
+  height: 580px;
+   
+}
+#grid-floats .grid-item:nth-child(12) {
+  margin-left: 14%;
+   
+}
 }
 
