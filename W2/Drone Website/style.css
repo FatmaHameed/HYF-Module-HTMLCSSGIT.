@@ -24,6 +24,7 @@ main {
   background-color: rgb(218, 236, 253);
   border-radius: 10px;
   box-shadow: 0px 2px 4px 4px rgb(1, 1, 70);
+  text-align: center;
 
 }
 main section:first-child {
@@ -33,6 +34,8 @@ main section:first-child {
 img {
   width: 98%;
   margin: 1%;
+  max-width: 240px;
+  
 }
 header {
   height: 120px;
@@ -76,6 +79,7 @@ h2 {
   background-color: white;
   border-radius: 30px;
   box-shadow: 0px 2px 4px rgb(1, 1, 70);
+  
 }
 #grid-floats .grid-item:hover {
   background-color: rgb(9, 44, 139);
@@ -89,7 +93,8 @@ h3 {
   font-weight: 700;
   text-shadow: 0px 5px 9px rgb(1, 1, 70);
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
+  height: 50px;
 }
 p {
   width: 85%;
@@ -158,61 +163,69 @@ p {
 #grid-floats .grid-item {
   width: 31%;
   margin: 2% 1%;
-  height: 570px;
+  height: 585px;
   
 }
 
 #grid-floats .grid-item:nth-child(1) {
   width: 47.7%;
   margin: 2% 1%;
-  height: 550px; 
+  height: 450px; 
  
 }
 #grid-floats .grid-item:nth-child(2) {
   width: 47.7%;
   margin: 2% 1%;
-  height: 550px;
+  height: 450px;
    
 }
-
-
+#grid-floats .grid-item:nth-child(3) p {
+  font-size: 15px;  
+}
+#grid-floats .grid-item:nth-child(9) p {
+  font-size: 15px;  
+}
+#grid-floats .grid-item:nth-child(10) p {
+  font-size: 15px;  
+}
 #grid-flex .grid-item {
   margin: 2% 1%; 
-  width: 210px; 
+  width: 160px; 
 }
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768.1px) {
   #grid-floats .grid-item {
     width: 31%;
     margin: 2% 1%;
-    height: 570px;
+    height: 580px; 
     
   }
   
   #grid-floats .grid-item:nth-child(1) {
     width: 47.7%;
     margin: 2% 1%;
-    height: 550px; 
+    height: 450px;
    
   }
   #grid-floats .grid-item:nth-child(2) {
     width: 47.7%;
     margin: 2% 1%;
-    height: 550px;
+    height: 450px;
      
   }
+
   
 #grid-flex .grid-item {
   margin: 2% 1%; 
-  width: 250px; 
+  width: 220px; 
 }
 
 }
 
 /* Making website responsive for Desktop > 1024*/
-@media (min-width: 1025px) {
+@media (min-width: 1024.1px) {
   #grid-floats {
   margin-left: 2.3%;
   padding-right: .1%;
@@ -222,7 +235,7 @@ p {
   width: 22%;
   float: left;
   margin: 30px 10px 30px 15px;
-  height: 580px;
+  height: 550px;
   
 }
  #grid-flex {
@@ -237,15 +250,15 @@ p {
  #grid-floats .grid-item:nth-child(1) {
   width: 46.4%;
   margin: 30px 10px 30px 15px;
-  height: 580px;
+  height: 550px;
    
 }
 #grid-floats .grid-item:nth-child(2) {
   width: 22%;
   margin: 30px 10px 30px 15px;
-  height: 580px;
-   
+  height: 550px;   
 }
+
 #grid-floats .grid-item:nth-child(12) {
   clear: left;
   margin-left: 13%;
@@ -253,13 +266,14 @@ p {
    
 }
 #grid-floats .grid-item:nth-child(9) P {
-  font-size: 16PX; 
+  font-size: 16px; 
 }
 #grid-floats .grid-item:nth-child(10) P {
-  font-size: 16.5PX; 
+  font-size: 16px; 
 }
 #grid-floats .grid-item:nth-child(3) P {
-  font-size: 16.5PX; 
+  font-size: 16px; 
+  
 }
 }
 
