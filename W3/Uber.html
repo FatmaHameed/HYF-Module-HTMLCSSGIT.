@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="Uber.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--header part start-->
     <header>
-      <nav>
+      <nav id="navBar">
         <h1>Uper</h1>
         <ul>
           <li>
             <a href="#"> Bedrijf</a>
-            <ul>
+            <ul class="leftNav">
               <li><a href="#">Over ons</a></li>
               <li><a href="#">Hoe Uber werkt</a></li>
               <li><a href="#">Wereldburgerschap </a></li>
@@ -26,14 +30,19 @@
           </li>
           <li><a href="#"> Veiligheid</a></li>
           <li><a href="#">Help </a></li>
-          <li><a href="#">Informatie over COVID-19 </a></li>
+          <li>
+            <a href="#">Informatie over COVID-19 </a>
+          </li>
+        </ul>
+        <ul class="rightNav">
           <li><a href="#">NL-NL</a></li>
           <li><a href="#">Producten </a></li>
           <li><a href="#">Inloggen </a></li>
-          <li><a href="#">Aanmelden </a></li>
+
+          <button><a href="#">Aanmelden </a></button>
         </ul>
       </nav>
-      <div>
+      <div id="backgroundImg">
         <div></div>
         <div></div>
       </div>
