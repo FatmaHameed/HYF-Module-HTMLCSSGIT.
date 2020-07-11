@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(funcky.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#wrap {
+  font-family: 'Fredoka One', cursive;
+  width: 50%;
+  margin: 100px auto;
+  padding: 40px;
+  text-align: center;
+  background-image: url(body.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 30%;
+}
+#wrap h1,
+#wrap h2,
+#wrap p {
+  padding: 40px;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  color: yellow;
+}
