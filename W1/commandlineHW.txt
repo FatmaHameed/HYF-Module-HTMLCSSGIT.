@@ -1,5 +1,5 @@
 1- To create a hidden folder (firstanswer) in CLI we use this command:
-mdir .firstanswer
+mkdir .firstanswer
 To display it in CLI, we use this command:
 ls -a
 
